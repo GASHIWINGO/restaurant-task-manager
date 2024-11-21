@@ -17,7 +17,6 @@ class Employee:
         self.tasks = []
 
     def assign_task(self, task):
-        """Назначить задачу сотруднику."""
         self.tasks.append(task)
         task.assign_to(self)
 
