@@ -52,7 +52,6 @@ class TaskManager:
         return employee
 
     def get_employee_tasks(self, employee_id: int) -> List[Task]:
-        """Получить список задач сотрудника."""
         for employee in self.employees:
             if employee.id == employee_id:
                 return employee.tasks
